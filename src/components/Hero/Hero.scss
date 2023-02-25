@@ -1,0 +1,60 @@
+@use '../../variables' as vars;
+
+.Hero {
+    height:100vh;
+    width:100%;
+    background: linear-gradient(vars.$shadow-clr, vars.$shadow-clr), url('../../assets/img/hero_img.jpg');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.Hero_title {
+    color: vars.$primary-clr-400;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 0 2.5rem;
+    padding-top: 1rem;
+    text-align: justify;
+    text-shadow: vars.$border-clr 1px 1px;
+}
+
+.Hero_title_name {
+    display: block;
+    font-size: 2.5em;
+    text-align: justify;
+}
+
+.Hero_link {
+    color: vars.$primary-clr-400;
+    cursor: pointer;
+    display: block;
+    font-size: 1.5rem;
+    margin: 1rem 2.5rem;
+    text-align: center;
+    width:fit-content;
+}
+
+.Hero_btn {
+    background-color: transparent;
+    border: 1px solid vars.$primary-clr-400;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin: 5rem auto;
+    padding: 1rem 0.5rem;
+    text-decoration: none;
+}
+
+.Hero_btn:hover {
+    background-color: vars.$shadow-clr;
+}
+
+.Hero_link:any-link {
+    color: vars.$primary-clr-400;
+}
+
+@media screen and (min-width: 768px) {
+    .Hero_title  {
+        padding-top: 8rem; 
+    }
+}

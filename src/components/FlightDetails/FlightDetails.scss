@@ -1,0 +1,24 @@
+@use '../../variables' as vars;
+
+.Calculator_infos-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 20vh;
+}
+
+.Calculator_infos-box_p {
+    text-align: center;
+    color:vars.$secondary-clr-400;
+}
+
+.Calculator_infos-box_results_div {
+    margin: 1rem 0;
+}
+
+@media screen and (min-width: 992px) {
+    .Calculator_infos-box {
+        width: 40vw;
+    }
+}
